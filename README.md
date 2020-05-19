@@ -79,7 +79,7 @@ ________________________________________________________________________________
 ![](Images/CVplots.png)
 ___________________________________________________________________________________________________________________________
 ## Part 4: Side-by-side boxplots of train and test residuals
-![](Images/5.png)
+![](Images/Residuals.png)
 ___________________________________________________________________________________________________________________________
 ## Part 5: Bar-plots (with bootstrapped error bars) of the estimated coeﬃcients, and the importance of the parameters
 ![](Images/6.png)

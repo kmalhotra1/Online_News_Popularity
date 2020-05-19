@@ -75,15 +75,11 @@ ________________________________________________________________________________
 ## Part 2: Side by Side boxplots of test and train Rsquared
 ![](Images/1.png)
 ___________________________________________________________________________________________________________________________
-## Part 3: 10-fold Cross-Validation curves for lasso, elastic-net, and ridge
-![](Images/2.png)
-![](Images/3.png)
-![](Images/4.png)
+## Part 3: 10-fold Cross-Validation curves for ridge, elastic-net, and lasso, respectively
+![](Images/CVplots.png)
 ___________________________________________________________________________________________________________________________
 ## Part 4: Side-by-side boxplots of train and test residuals
 ![](Images/5.png)
 ___________________________________________________________________________________________________________________________
 ## Part 5: Bar-plots (with bootstrapped error bars) of the estimated coeﬃcients, and the importance of the parameters
 ![](Images/6.png)
-___________________________________________________________________________________________________________________________
-## Part 6: performance and the time need to train each model in a table and comments1

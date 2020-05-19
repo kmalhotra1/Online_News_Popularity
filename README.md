@@ -2,7 +2,7 @@
 
 [Dataset Link](https://archive.ics.uci.edu/ml/datasets/Online+News+Popularity)
 
-## Part 1: Brief description of the data
+## Brief description of project
 This analysis is conducted on the Online News Popularity dataset, originally acquired on January 8, 2015, through the
 courtesy of UCI Machine Learning Repository, Mashable, Kelwin Fernandes, Pedro Vinagre, Paulo Cortez, and Pedro Sernadela.
 There are n=39,797 observations within this data set and 61 attributes. Of these 61 attributes, I have elected to remove 4. Therefore, this analysis is centered on a total of p=56 predictors and one response variable, absolute value of title subjectivity. The absolute value of title subjectivity allows one to visualize how certain predictors influence the measurement of variance in the title subjectivity. All variables are provided below for the reader.
@@ -72,14 +72,3 @@ Attribute Information:
 59. abs_title_sentiment_polarity: Absolute polarity level 
 60. shares: Number of shares (target)
 ___________________________________________________________________________________________________________________________
-## Part 2: Side by Side boxplots of test and train Rsquared
-![](Images/1.png)
-___________________________________________________________________________________________________________________________
-## Part 3: 10-fold Cross-Validation curves for ridge, elastic-net, and lasso, respectively
-![](Images/CVplots.png)
-___________________________________________________________________________________________________________________________
-## Part 4: Side-by-side boxplots of train and test residuals
-![](Images/Residuals.png)
-___________________________________________________________________________________________________________________________
-## Part 5: Bar-plots (with bootstrapped error bars) of the estimated coeﬃcients, and the importance of the parameters
-![](Images/6.png)

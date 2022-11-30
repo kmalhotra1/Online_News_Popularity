@@ -1,74 +1,17 @@
-# Online News Popularity
+# Online News Popularity 
 
-[Dataset Link](https://archive.ics.uci.edu/ml/datasets/Online+News+Popularity)
 
-## Brief description of project
-This analysis is conducted on the Online News Popularity dataset, originally acquired on January 8, 2015, through the
-courtesy of UCI Machine Learning Repository, Mashable, Kelwin Fernandes, Pedro Vinagre, Paulo Cortez, and Pedro Sernadela.
-There are n=39,797 observations within this data set and 61 attributes. Of these 61 attributes, I have elected to remove 4. Therefore, this analysis is centered on a total of p=56 predictors and one response variable, absolute value of title subjectivity. The absolute value of title subjectivity allows one to visualize how certain predictors influence the measurement of variance in the title subjectivity. All variables are provided below for the reader.
+## Gentle Introduction
+This analysis is conducted on the Online News Popularity [dataset](https://archive.ics.uci.edu/ml/datasets/Online+News+Popularity), acquired initially on January 8, 2015, through the courtesy of UCI Machine Learning Repository, Mashable, Kelwin Fernandes, Pedro Vinagre, Paulo Cortez, and Pedro Sernadela.
+
+There are n=39,797 observations within this data set and 61 attributes. Of these 61 attributes, I have elected to remove 4. Therefore, this analysis is centered on a total of p=56 predictors and one response variable, the absolute value of title subjectivity. The absolute value of title subjectivity allows one to visualize how specific predictors influence the measurement of variance in title subjectivity. All variables and descriptions can be accessed through the dataset link provided.
 
 For this regression analysis, several techniques such as lasso, ridge, elastic-net, random forest, cross-validation, R-Squared tests, and bootstrapped error bars are leveraged to measure the relationship of predictors onto the response variable. 
 
-Attribute Information: 
-0. url: URL of the article (non-predictive) 
-1. timedelta: Days between the article publication and the dataset acquisition (non-predictive) 
-2. n_tokens_title: Number of words in the title 
-3. n_tokens_content: Number of words in the content 
-4. n_unique_tokens: Rate of unique words in the content 
-5. n_non_stop_words: Rate of non-stop words in the content 
-6. n_non_stop_unique_tokens: Rate of unique non-stop words in the content 
-7. num_hrefs: Number of links 
-8. num_self_hrefs: Number of links to other articles published by Mashable 
-9. num_imgs: Number of images 
-10. num_videos: Number of videos 
-11. average_token_length: Average length of the words in the content 
-12. num_keywords: Number of keywords in the metadata 
-13. data_channel_is_lifestyle: Is data channel 'Lifestyle'? 
-14. data_channel_is_entertainment: Is data channel 'Entertainment'? 
-15. data_channel_is_bus: Is data channel 'Business'? 
-16. data_channel_is_socmed: Is data channel 'Social Media'? 
-17. data_channel_is_tech: Is data channel 'Tech'? 
-18. data_channel_is_world: Is data channel 'World'? 
-19. kw_min_min: Worst keyword (min. shares) 
-20. kw_max_min: Worst keyword (max. shares) 
-21. kw_avg_min: Worst keyword (avg. shares) 
-22. kw_min_max: Best keyword (min. shares) 
-23. kw_max_max: Best keyword (max. shares) 
-24. kw_avg_max: Best keyword (avg. shares) 
-25. kw_min_avg: Avg. keyword (min. shares) 
-26. kw_max_avg: Avg. keyword (max. shares) 
-27. kw_avg_avg: Avg. keyword (avg. shares) 
-28. self_reference_min_shares: Min. shares of referenced articles in Mashable 
-29. self_reference_max_shares: Max. shares of referenced articles in Mashable 
-30. self_reference_avg_sharess: Avg. shares of referenced articles in Mashable 
-31. weekday_is_monday: Was the article published on a Monday? 
-32. weekday_is_tuesday: Was the article published on a Tuesday? 
-33. weekday_is_wednesday: Was the article published on a Wednesday? 
-34. weekday_is_thursday: Was the article published on a Thursday? 
-35. weekday_is_friday: Was the article published on a Friday? 
-36. weekday_is_saturday: Was the article published on a Saturday? 
-37. weekday_is_sunday: Was the article published on a Sunday? 
-38. is_weekend: Was the article published on the weekend? 
-39. LDA_00: Closeness to LDA topic 0 
-40. LDA_01: Closeness to LDA topic 1 
-41. LDA_02: Closeness to LDA topic 2 
-42. LDA_03: Closeness to LDA topic 3 
-43. LDA_04: Closeness to LDA topic 4 
-44. global_subjectivity: Text subjectivity 
-45. global_sentiment_polarity: Text sentiment polarity 
-46. global_rate_positive_words: Rate of positive words in the content 
-47. global_rate_negative_words: Rate of negative words in the content 
-48. rate_positive_words: Rate of positive words among non-neutral tokens 
-49. rate_negative_words: Rate of negative words among non-neutral tokens 
-50. avg_positive_polarity: Avg. polarity of positive words 
-51. min_positive_polarity: Min. polarity of positive words 
-52. max_positive_polarity: Max. polarity of positive words 
-53. avg_negative_polarity: Avg. polarity of negative words 
-54. min_negative_polarity: Min. polarity of negative words 
-55. max_negative_polarity: Max. polarity of negative words 
-56. title_subjectivity: Title subjectivity 
-57. title_sentiment_polarity: Title polarity 
-58. abs_title_subjectivity: Absolute subjectivity level 
-59. abs_title_sentiment_polarity: Absolute polarity level 
-60. shares: Number of shares (target)
-___________________________________________________________________________________________________________________________
+![1](https://user-images.githubusercontent.com/35614192/204864713-02a78562-e35b-4289-b1db-493f7c412747.png)
+![2](https://user-images.githubusercontent.com/35614192/204864775-3dfa89a4-a992-40c9-9970-7f93caea0277.png)
+![3](https://user-images.githubusercontent.com/35614192/204864791-d39a53bc-1aa5-46a2-8188-4ff990128880.png)
+![4](https://user-images.githubusercontent.com/35614192/204864813-8da8742a-50dd-41f4-bba1-fa71b6bf58ec.png)
+![5](https://user-images.githubusercontent.com/35614192/204864823-bb2096d6-0691-45da-81cb-f1f1412d1c29.png)
+![6](https://user-images.githubusercontent.com/35614192/204864837-91770695-b027-46a9-8c8b-0096db822ae0.png)
+![7](https://user-images.githubusercontent.com/35614192/204864852-22d71df6-0846-4e95-8b2a-5f2ceb81f64a.png)
